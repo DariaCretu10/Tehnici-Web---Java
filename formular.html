@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="formular.css">
+        <title>Pizza's heaven</title>
+        <link rel="shortcut icon"
+            type="image/png"
+            href="images/favicon.png"/>
+    </head>
+    <body>
+        <div id="comanda">
+            <h2>Detalii comandă</h2>
+            <form onsubmit="return checkForm(this);">
+                <label for="nume">Nume (client) :</label><br>
+                <input type="text" id="nume" name="nume"><br><br>
+                <label for="pre">Prenume :</label><br>
+                <input type="text" id="pre" name="pre"><br><br>
+                <label for="email">Adresa de email :</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="plata">Modalitatea de plată :</label><br>
+                <select id="plata" name="plata">
+                    <option value="numerar">Numerar</option>
+                    <option value="card">Card bancar</option>
+                </select><br>
+                <p>Extra sos :</p>
+                <input type="checkbox" id="dulce" name="dulce" value="Bike">
+                <label for="vehicle1"> Ketchup dulce</label><br>
+                <input type="checkbox" id="picant" name="picant" value="Car">
+                <label for="vehicle2"> Ketchup picant</label><br>
+                <p>Băutura gratis la alegere :</p>
+                <input type="radio" id="cola" name="bautura" value="cola">
+                <label for="cola">Coca-cola</label><br>
+                <input type="radio" id="sprite" name="bautura" value="sprite">
+                <label for="sprite">Sprite</label><br>
+                <input type="radio" id="nestea" name="bautura" value="nestea">
+                <label for="nestea">Nestea</label><br><br>
+
+                <label for="com"> Numărul de porții al comenzii (între 0 and 50):</label>
+                <input type="range" id="com" name="com" min="0" max="50"><br><br>
+
+                <label for="parola">Parola de logare a angajatului :</label><br>
+                <input type="password" id="parola" name="parola"><br><br>
+
+                <input type="submit" name="submit" value="Go!" id="butform" onclick="window.location.href='pizza.html'" />
+            </form>
+        </div>
+        <script src="formular.js"></script>
+    </body>
+</html>

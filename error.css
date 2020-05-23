@@ -1,0 +1,14 @@
+body {
+    background-color: orange;
+}
+
+img {
+    width: 250px;
+}
+
+.mesaj {
+    margin-right: 400px;
+    margin-left: 400px;
+    padding: 10px;
+    text-align: center;
+}

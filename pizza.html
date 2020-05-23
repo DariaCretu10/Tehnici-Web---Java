@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="pizza.css">
+        <title>Pizza's heaven</title>
+        <link rel="shortcut icon"
+            type="image/png"
+            href="images/favicon.png"/>
+    </head>
+    
+        <div id="menu">
+            <img src="images/ardei.png" alt="ardei" class="ingrediente" />
+            <img src="images/branza.png" alt="branza" class="ingrediente" id="branza" />
+            <img src="images/salam.png" alt="salam" class="ingrediente" />
+            <img src="images/masline.png" alt="masline" class="ingrediente" />
+            <img src="images/rosie.png" alt="rosie" class="ingrediente" />
+            <img src="images/ketchup.png" alt="ketchup" class="ingrediente" />
+            <img src="images/varza.png" alt="varza" class="ingrediente" />
+            <div id="safeTimer">
+                <p id="cron">02:00</p>
+            </div>
+        </div>  
+    <body onload="timer()">
+    <img src="images/pizza.png" alt="pizza"  class="imagi" /> 
+    <div class="butoane">
+        <button onclick="window.location.href='play.html'">Restart game</button>
+        <button onclick="window.location.href='error.html'">Settings</button>
+        <button onclick="window.location.href='pizza.html'">Resume</button>
+    </div>
+    <script src="pizza.js"></script>
+    </body>
+</html>
